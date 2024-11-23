@@ -28,6 +28,8 @@
 -- (see where local env is defined)
 -- Something nice to play is appending minetest.env to it.
 
+local S = minetest.get_translator("pipeworks")
+
 local BASENAME = "pipeworks:lua_tube"
 
 local rules = {
@@ -910,7 +912,7 @@ for white  = 0, 1 do
 	}
 
 	minetest.register_node(node_name, {
-		description = "Lua controlled Tube",
+		description = S("Lua controlled Tube"),
 		drawtype = "nodebox",
 		tiles = tiles,
 		use_texture_alpha = texture_alpha_mode,

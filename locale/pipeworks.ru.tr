@@ -2,9 +2,10 @@
 
 # License: CC-by-SA 4.0
 # Author: VinAdmin ovvitalik@gmail.com
+# Corrections: randomei mail@randomei.com
 
 ## generic interaction
-Set=Установить
+Set=Сохр.
 Cancel=Отмена
 
 ## digilines interfacing
@@ -19,15 +20,16 @@ unconfigured Autocrafter: unknown recipe=ненастроенный автокр
 unconfigured Autocrafter=ненастроенный автокрафтер
 '@1' Autocrafter (@2)='@1' Автокрафтер (@2)
 Save=Сохранить
-paused '@1' Autocrafter=приостановлено '@1' Автокрафтер
+paused '@1' Autocrafter=автокрафтер: приостановлено '@1'
 Autocrafter=Автокрафтер
 
 ## compat-furnaces
-Allow splitting incoming material (not fuel) stacks from tubes=Разрешить разделение стопок поступающего материала (не топлива) из трубок.
+Allow splitting incoming material (not fuel) stacks from tubes=Разрешить разделение стаков поступающего материала (не топлива) из трубок.
 
 ## decorative tubes
-Airtight steelblock embedded tube=Герметичная встроенная трубка из стального блока
-Airtight panel embedded tube=Герметичная встроенная в панель трубка
+Airtight steelblock embedded tube=Герметичная труба, встроенная в стальной блок
+Airtight panel embedded tube=Герметичная труба, встроенная в панель
+Airtight ironblock embedded tube=Герметичная труба, встроенная в железный блок
 
 ## devices
 Pump/Intake Module=Модуль насоса/впуска
@@ -36,29 +38,31 @@ Decorative grating=Декоративная решетка
 Spigot outlet=Выходной патрубок
 Airtight Pipe entry/exit=Вход/выход герметичной трубы
 Flow Sensor=Датчик потока
-Flow sensor (on)=Датчик расхода (вкл.)
+Flow sensor (on)=Датчик потока (вкл)
 empty=пустой
 @1% full=@1% заполнено
 Expansion Tank (@1)=Расширительный бак (@1)
 Fluid Storage Tank (@1)=Резервуар для хранения жидкости (@1)
-Fountainhead=Источник
-Straight-only Pipe=Только прямая труба
+Fountainhead=Форсунка для фонтана
+Straight-only Pipe=Всегда прямая труба
 
 ## filter-injector
 (slot #@1 next)=(слот #@1 следующий)
-@1 Filter-Injector=@1 фильтр-инжектор
-Sequence slots by Priority=Последовательность слотов по приоритету
-Sequence slots Randomly=Слоты последовательности Случайный
-Sequence slots by Rotation=Последовательность слотов по вращению
-Exact match - off=Точное совпадение – выключено
-Exact match - on=Точное совпадение - включено
-Prefer item types:=Предпочитаете типы предметов:
-Itemwise=По пунктам
-Stackwise=Стекообразно
+@1 Filter-Injector=Фильтр-инжектор @1
+Sequence slots by Priority=Послед-ть слотов: по приоритету
+Sequence slots Randomly=Послед-ть слотов: случайная
+Sequence slots by Rotation=Послед-ть слотов: по вращению
+Exact match - off=Точное совпадение – выкл
+Exact match - on=Точное совпадение - вкл
+Prefer item types:=Предпочитать типы предметов:
+Itemwise=(по предмету)
+Stackwise=(по стаку)
 Digiline=Диджилайн
+Item Tags=Теги предметов
+Close=Закрыть
 
 ## legacy
-Auto-Tap=Авто-нажатие
+Auto-Tap=Авто-кран
 
 ## pipes
 Pipe Segment=Сегмент трубы
@@ -66,56 +70,58 @@ Pipe Segment (legacy)=Сегмент трубы (устаревший)
 
 
 ## routing tubes
-Pneumatic tube segment=Сегмент пневматической трубки
-Broken Tube=Сломанная трубка
-High Priority Tube Segment=Сегмент трубы с высоким приоритетом
-Accelerating Pneumatic Tube Segment=Ускорительный сегмент пневматической трубки
-Crossing Pneumatic Tube Segment=Пересечение сегмента пневматической трубы
-One way tube=Односторонняя трубка
+Pneumatic tube segment=Сегмент пневмотрубы
+Broken Tube=Сломанная пневмотруба
+High Priority Tube Segment=Сегмент пневмотрубы с высоким приоритетом
+Accelerating Pneumatic Tube Segment=Ускоряющий сегмент пневмотрубы
+Crossing Pneumatic Tube Segment=Пересечение пневмо-трубы@n(проводит предметы только по прямой)
+One way tube=Односторонняя пневмо-труба@n(проводит предметы только в одну сторону)
 
 ## signal tubes
-Detecting Pneumatic Tube Segment on=Обнаружение сегмента пневматической трубки включено
-Detecting Pneumatic Tube Segment=Обнаружение сегмента пневматической трубки
-Digiline Detecting Pneumatic Tube Segment=Digiline обнаруживает сегмент пневматической трубки
-Digiline Detecting Tube=Детекторная трубка Digiline
-Conducting Pneumatic Tube Segment=Проводящий сегмент пневматической трубки
-Conducting Pneumatic Tube Segment on=Проводящий сегмент пневматической трубки на
-Digiline Conducting Pneumatic Tube Segment=Сегмент проводящей пневматической трубки Digiline
-Mesecon and Digiline Conducting Pneumatic Tube Segment=Сегмент токопроводящей пневматической трубки Mesecon и Digiline
-Mesecon and Digiline Conducting Pneumatic Tube Segment on=Сегмент проводящей пневматической трубки Mesecon и Digiline на
-Tag Sorting Pneumatic Tube Segment=Сегмент пневматической трубки для сортировки тегов
-Lua controlled Tube=Трубка, управляемая Lua
+Detecting Pneumatic Tube Segment on=Сегмент детекторной пневмотрубы (вкл)
+Detecting Pneumatic Tube Segment=Сегмент детекторной пневмотрубы
+Digiline Detecting Pneumatic Tube Segment=Сегмент детекторной пневмотрубы диджилайн
+Digiline Detecting Tube=Детекторная пневмотруба диджилайн
+Conducting Pneumatic Tube Segment=Проводящий сегмент пневмотрубы
+Conducting Pneumatic Tube Segment on=Проводящий сегмент пневмотрубы (вкл)
+Digiline Conducting Pneumatic Tube Segment=Диджилайн-проводящий сегмент пневмотрубы
+Mesecon and Digiline Conducting Pneumatic Tube Segment=Сегмент проводящей пневмотрубы для мезекон и диджилайн
+Mesecon and Digiline Conducting Pneumatic Tube Segment on=Сегмент проводящей пневмотрубы для мезекон и диджилайн (вкл)
+Tag Sorting Pneumatic Tube Segment=Сегмент пневмотрубы, сортирующей по тегам
+Lua controlled Tube=Пневмотруба, управляемая Lua
 
 ## sorting tubes
-Sorting Pneumatic Tube Segment=Сортировка сегментов пневматической трубки
-Sorting pneumatic tube=Сортировочная пневматическая труба
+Sorting Pneumatic Tube Segment=Сегмент сортировочной пневмотрубы
+Sorting pneumatic tube=Сортировочная пневмотруба
 
 ## teleport tube
 Receive=Получить
 Channels are public by default=По умолчанию каналы являются общедоступными
 Use <player>:<channel> for fully private channels=Используйте <игрок>:<канал> для полностью приватных каналов
-Use <player>;<channel> for private receivers=Используйте <игрок>;<канал> для частных приемников
-Teleporting Pneumatic Tube Segment=Сегмент пневматической трубы для телепортации
-Teleporting Tube=Телепортационная труба
-Unconfigured Teleportation Tube=Неконфигурированная телепортационная труба
+Use <player>;<channel> for private receivers=Используйте <игрок>;<канал> для приватных приемников
+Teleporting Pneumatic Tube Segment=Сегмент телепортирующей пневмотрубы
+Teleporting Tube=Телепортирующая пневмотруба
+Unconfigured Teleportation Tube=Ненастроенная телепортирующая пневмотруба
 Sorry, channel '@1' is reserved for exclusive use by @2=Извините, канал '@1' зарезервирован исключительно для использования @2
 Sorry, receiving from channel '@1' is reserved for @2=Извините, прием с канала '@1' зарезервирован для @2
-Teleportation Tube @1 on '@2'=Трубка телепортации @1 на '@2'
+Teleportation Tube @1 on '@2'=Телепортирующая пневмотруба @1 на '@2'
 
 ## trashcan
 Trash Can=Мусорное ведро
 
 ## tube registration
-Pneumatic tube segment (legacy)=Сегмент пневматической трубы (устаревший)
+Pneumatic tube segment (legacy)=Сегмент пневмотрубы (устаревший)
 
 ## vacuum tubes
 Radius=Радиус
-Vacuuming Pneumatic Tube Segment=Сегмент пневматической трубки для вакуумирования
-Adjustable Vacuuming Tube=Регулируемая вакуумная трубка
-Adjustable Vacuuming Pneumatic Tube Segment=Регулируемый сегмент вакуумной пневматической трубки
-Adjustable Vacuuming Pneumatic Tube Segment (@1m)=Регулируемый сегмент вакуумной пневматической трубки (@1m)
+Vacuuming Pneumatic Tube Segment=Сегмент вакуумной пневмотрубы
+Adjustable Vacuuming Tube=Регулируемая вакуумная труба
+Adjustable Vacuuming Pneumatic Tube Segment=Регулируемый сегмент вакуумной пневмотрубы
+Adjustable Vacuuming Pneumatic Tube Segment (@1m)=Регулируемый сегмент вакуумной пневмотрубы (@1m)
 
 ## wielder
-Node Breaker=Разрушитель узла
-Deployer=Развертыватель
+Node Breaker=Разрушитель блоков
+Deployer=Разместитель
 Dispenser=Распылитель
+
+Automation components=Автоматизация

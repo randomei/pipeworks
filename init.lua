@@ -4,6 +4,8 @@
 -- and devices that they can connect to.
 --
 
+local S = minetest.get_translator("pipeworks")
+
 pipeworks = {
 	ui_cat_tube_list = {},
 	worldpath = minetest.get_worldpath(),
@@ -119,7 +121,7 @@ if minetest.get_modpath("unified_inventory") and unified_inventory.registered_ca
 	if not unified_inventory.registered_categories["automation"] then
 		unified_inventory.register_category("automation", {
 			symbol = "pipeworks:lua_tube000000",
-			label = "Automation components"
+			label = S("Automation components")
 		})
 	end
 	unified_inventory.add_category_items("automation", pipeworks.ui_cat_tube_list)
